@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XandyFit Store: sua loja demonstrativa de acessórios para treino, com carrinho e cupom de desconto.">
+  <title>XandyFit Store | Seu treino começa aqui</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#produtos">Pular para os produtos</a>
+  <div class="announcement">PROJETO ACADÊMICO • LOJA DEMONSTRATIVA • CUPOM <strong>XANDY10</strong> = 10% OFF</div>
+  <header class="site-header" id="inicio">
+    <div class="container nav-row">
+      <a href="#inicio" class="brand" aria-label="XandyFit Store, início"><span class="brand-mark" aria-hidden="true">X</span><span>Xandy<span class="brand-accent">Fit</span><small>STORE</small></span></a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#vantagens">Vantagens</a><a href="#contato">Contato</a>
+      </nav>
+      <button id="abrir-carrinho" class="cart-trigger" type="button" aria-label="Abrir carrinho de compras">
+        <span aria-hidden="true">🛒</span> Carrinho <span id="contador-carrinho" class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ENERGIA PRA IR MAIS LONGE</p>
+          <h1 id="hero-titulo">Seu próximo <em>nível</em> começa aqui.</h1>
+          <p>Uma seleção de acessórios que combina com a sua rotina. Do primeiro treino ao último exercício: foco, conforto e evolução.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#produtos">Explorar produtos <span aria-hidden="true">↗</span></a><a class="btn btn-ghost" href="#vantagens">Por que XandyFit?</a></div>
+          <div class="hero-mini"><span>★ Escolhas práticas</span><span>✓ Compra simulada</span><span>⚡ Sem complicação</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="hero-disc"><svg viewBox="0 0 360 270" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round"><path stroke-width="28" d="M75 135h210"/><path stroke-width="17" d="M70 79v112M102 63v144M258 63v144M290 79v112"/></g></svg></div>
+          <span class="hero-card hero-card-top">+ FOCO</span><span class="hero-card hero-card-bottom">+ EVOLUÇÃO</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band" id="vantagens" aria-label="Vantagens">
+      <div class="container trust-grid">
+        <div><span class="trust-icon">✦</span><strong>ESCOLHA INTELIGENTE</strong><small>Acessórios para sua rotina</small></div>
+        <div><span class="trust-icon">◎</span><strong>PREÇOS TRANSPARENTES</strong><small>Totais calculados na hora</small></div>
+        <div><span class="trust-icon">▣</span><strong>CARRINHO PRÁTICO</strong><small>Adicione, ajuste e remova</small></div>
+      </div>
+    </section>
+
+    <section class="catalog container" id="produtos" aria-labelledby="catalog-titulo">
+      <div class="section-heading"><div><p class="eyebrow">ESCOLHIDOS PARA SUA JORNADA</p><h2 id="catalog-titulo">Equipamentos que <span>acompanham você.</span></h2></div><p>Encontre o que precisa e monte seu kit de treino.</p></div>
+      <div class="catalog-toolbar">
+        <div class="filters" aria-label="Filtrar produtos por categoria">
+          <button class="filter-btn is-active" type="button" data-category="Todos" aria-pressed="true">Todos</button>
+          <button class="filter-btn" type="button" data-category="Força" aria-pressed="false">Força</button>
+          <button class="filter-btn" type="button" data-category="Acessórios" aria-pressed="false">Acessórios</button>
+          <button class="filter-btn" type="button" data-category="Recuperação" aria-pressed="false">Recuperação</button>
+        </div>
+        <label class="search-wrap"><span class="sr-only">Pesquisar produtos</span><span aria-hidden="true">⌕</span><input id="pesquisa" type="search" placeholder="Buscar produto..." autocomplete="off"></label>
+      </div>
+      <div id="lista-produtos" class="products-grid" aria-live="polite"></div>
+      <p id="sem-resultados" class="empty-result" hidden>Nenhum produto encontrado. Tente outro termo.</p>
+    </section>
+
+    <section class="offer-section" aria-labelledby="oferta-titulo">
+      <div class="container offer-box"><div><p class="eyebrow">BENEFÍCIO EXCLUSIVO</p><h2 id="oferta-titulo">Treinar com vontade. <span>Pagar menos.</span></h2><p>Use o cupom <strong>XANDY10</strong> no carrinho e ganhe 10% de desconto nos produtos.</p></div><a href="#produtos" class="btn btn-light">Escolher meu kit ↗</a></div>
+    </section>
+
+    <section class="details container" aria-labelledby="details-titulo">
+      <div class="details-copy"><p class="eyebrow">SIMPLES DO COMEÇO AO FIM</p><h2 id="details-titulo">Como comprar na XandyFit?</h2>
+        <ol class="steps"><li><strong>Escolha.</strong> Navegue pelos produtos e adicione os favoritos.</li><li><strong>Personalize.</strong> Ajuste quantidades e aplique um cupom.</li><li><strong>Finalize.</strong> Preencha os dados e simule sua compra.</li></ol>
+        <p class="demo-notice">Este site é um projeto acadêmico. Não recebe pagamentos nem envia pedidos reais.</p>
+      </div>
+      <div class="shipping-panel"><h3>Informações do pedido</h3><table><caption>Regras usadas no cálculo do carrinho</caption><thead><tr><th scope="col">Condição</th><th scope="col">Valor</th></tr></thead><tbody><tr><td>Compras abaixo de R$ 200</td><td>Frete R$ 14,90</td></tr><tr><td>Compras a partir de R$ 200</td><td>Frete grátis</td></tr><tr><td>Cupom XANDY10</td><td>10% nos produtos</td></tr></tbody></table><p class="fineprint">O frete é calculado sobre o subtotal antes do desconto. Os valores são ilustrativos.</p></div>
+    </section>
+
+    <section class="contact" id="contato" aria-labelledby="contato-titulo"><div class="container contact-grid"><div><p class="eyebrow">VAMOS EVOLUIR JUNTOS?</p><h2 id="contato-titulo">Receba novidades do universo fitness.</h2><p>Cadastre seu e-mail para ver uma demonstração de formulário com validação em JavaScript.</p></div><form id="form-novidades" class="newsletter" novalidate><label for="email-novidades">Seu melhor e-mail</label><div class="newsletter-row"><input type="email" id="email-novidades" name="email" placeholder="seuemail@exemplo.com" autocomplete="email" required><button class="btn btn-primary" type="submit">Cadastrar</button></div><p id="mensagem-novidades" class="form-feedback" role="status" aria-live="polite"></p></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><a class="brand" href="#inicio"><span class="brand-mark">X</span><span>Xandy<span class="brand-accent">Fit</span><small>STORE</small></span></a><p>Desenvolvido como atividade de Desenvolvimento Web. © <span id="ano-atual">2026</span> XandyFit Store. Projeto demonstrativo.</p><a href="#inicio">Voltar ao topo ↑</a></div></footer>
+
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="painel-carrinho" class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="titulo-carrinho" aria-hidden="true" tabindex="-1">
+    <div class="cart-header"><div><p class="eyebrow">SEU PEDIDO</p><h2 id="titulo-carrinho">Meu carrinho <span id="contador-painel">(0)</span></h2></div><button type="button" id="fechar-carrinho" class="icon-button" aria-label="Fechar carrinho">✕</button></div>
+    <div id="itens-carrinho" class="cart-items"></div>
+    <div class="cart-bottom"><form id="form-cupom"><label for="campo-cupom">Tem um cupom?</label><div class="coupon-row"><input id="campo-cupom" type="text" maxlength="24" placeholder="Digite seu cupom" autocomplete="off"><button type="submit">Aplicar</button></div><p id="mensagem-cupom" class="form-feedback" role="status" aria-live="polite"></p></form>
+      <div class="totals"><div><span>Subtotal</span><span id="valor-subtotal">R$ 0,00</span></div><div><span>Desconto</span><span id="valor-desconto">− R$ 0,00</span></div><div><span>Frete</span><span id="valor-frete">R$ 0,00</span></div><div class="total-grand"><strong>Total</strong><strong id="valor-total">R$ 0,00</strong></div></div>
+      <button id="finalizar-compra" type="button" class="btn btn-primary checkout-btn" disabled>Finalizar compra →</button><p class="cart-disclaimer">Simulação acadêmica: nenhuma cobrança será realizada.</p>
+    </div>
+  </aside>
+
+  <div id="modal-compra" class="modal-backdrop" hidden><section class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="titulo-finalizacao" tabindex="-1"><button id="fechar-modal" type="button" class="icon-button modal-close" aria-label="Fechar finalização">✕</button><div id="conteudo-finalizacao"><p class="eyebrow">ÚLTIMA ETAPA</p><h2 id="titulo-finalizacao">Finalizar pedido</h2><p>Preencha os dados abaixo para concluir a <strong>simulação</strong> de compra.</p><form id="form-compra" novalidate><label for="nome-cliente">Nome completo</label><input id="nome-cliente" type="text" minlength="3" maxlength="80" autocomplete="name" required placeholder="Seu nome"><label for="email-cliente">E-mail</label><input id="email-cliente" type="email" autocomplete="email" required placeholder="seuemail@exemplo.com"><p id="erro-compra" class="form-feedback" role="alert"></p><button type="submit" class="btn btn-primary checkout-btn">Confirmar pedido de demonstração</button></form></div></section></div>
+  <div id="aviso" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
